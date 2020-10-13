@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pet Adoption</title>
+        <style>
+            h1{
+                background-color: rgb(242, 139, 139);
+                border-radius: 2px;
+                height: 20%;
+                
+                color: rgb(194, 192, 192);
+                padding: 10px;
+            }
+            h1 > span{
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Pets here, dont shop, adopt      <span>&#9776</span></h1>
+        <ul>
+            {% for pet in pets %}
+            <li>{{ pet.name }}</li>
+            {% endfor %}
+        </ul>
+        
+    </body>
+</html>
